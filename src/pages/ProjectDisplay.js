@@ -15,7 +15,9 @@ function ProjectDisplay() {
       <p>
         <b>skills</b>: {project.skills.join(", ")}
       </p>
-      <FontAwesomeIcon icon={faGithub} />
+      <a href={project.githubLink}>
+        <FontAwesomeIcon icon={faGithub} />
+      </a>
     </div>
   );
 }

@@ -13,7 +13,7 @@ function Home() {
           <br></br> My passion for both learning and creating drives me to push
           the boundaries of what is possible. <br></br>I bring excitement to
           every project I work on through my love of development and design.
-          <br></br>If you're ready to bring your ideas to life, let's work
+          <br></br>f you're ready to bring your ideas to life, let's work
           together to create something amazing!
         </p>
       </div>
