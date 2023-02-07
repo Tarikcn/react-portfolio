@@ -26,6 +26,7 @@ CSS
   https://Tarikcn.github.io/react-portfolio
 
 ### Web App Screenshot
+![image](https://user-images.githubusercontent.com/115656280/217330686-52337b92-98d6-44d2-96af-a08156a16c47.png)
 
 ## License
 
