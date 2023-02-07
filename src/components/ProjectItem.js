@@ -1,17 +1,23 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import { ProjectList } from "../helpers/ProjectList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import "../styles/ProjectDisplay.css";
 
-function ProjectItem({ image, name }) {
+function ProjectDisplay() {
+  const { id } = useParams();
+  const project = ProjectList[id];
   return (
-    <div className="projectItem">
-      <div
-        style={{ backgroundImage: `url(${image})` }}
-        className="bgImage"
-      ></div>
-      <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-        <h1 style={{ marginTop: "auto" }}>{name}</h1>
-      </div>
+    <div className="project">
+      <h1> {project.name} </h1>
+      <img src={project.image} />
+      <p>
+        <b>skills</b>: {project.skills.join(", ")}
+      </p>
+      <FontAwesomeIcon icon={faGithub} />
     </div>
   );
 }
 
-export default ProjectItem;
+export default ProjectDisplay;
